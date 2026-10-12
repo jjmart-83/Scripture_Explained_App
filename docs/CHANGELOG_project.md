@@ -36,6 +36,11 @@ confirming its new guard prevents stale narration from being published. Single
 verse announcements are covered by contract checks; this week's groups all have
 multiple verses.
 
+**Publication:** Revision `a774747` deployed successfully in
+[Pages run 38206786112](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38206786112).
+The live library matches the revised export exactly, and all eleven full published
+MP3 hashes match the validated local files, including the nine new chapter tracks.
+
 ## 2026-10-11 — Consistent Isaiah 58 application wording — [UNCONFIRMED]
 
 **What changed:** Replaced Isaiah 58's closing "For this week, choose one small
