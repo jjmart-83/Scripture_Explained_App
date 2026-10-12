@@ -1,5 +1,13 @@
 # prepare_site.py Changelog
 
+## 2026-10-11 — Weekly listening sequence and written punctuation — [UNCONFIRMED]
+
+**What changed:** Exported introduction and review around the nine chapters with kind, stable IDs, nullable chapter numbers, and MP3 version hashes. Written commentary comes from canonical session text, validated against normalized rendered speech.
+
+**Why:** Show initials with periods in the transcript while preventing TTS pauses; publish an eleven-section sequence and refresh revised audio reliably.
+
+**Side effects / limitations:** Exporter remains standard-library only: normalization is shared through speech_text.py instead of importing the numerical TTS renderer. Owner listening/UI feedback remains pending.
+
 ## 2026-10-11 — Static listening-library exporter — [UNCONFIRMED]
 
 **What changed:** Added a standard-library exporter from local session/render

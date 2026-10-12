@@ -1,5 +1,44 @@
 # Project Setup Changelog
 
+## 2026-10-11 — Weekly opening, review, and written initials — [UNCONFIRMED]
+
+**What changed:** Added Lesson Introduction before Isaiah 58 and Week in Review
+after Isaiah 66. Moved week orientation/two-voice instructions out of Isaiah 58,
+made chapter openings consistent, and replaced "generated explanations for
+beginners" with explanations generated to bring clarity to scripture language
+and deepen understanding. Written commentary now retains canonical middle-initial
+periods; only spoken text removes them. Added source-linked preparation helpers,
+verified WAV reuse, canonical Markdown transcripts, and per-track audio versions.
+
+**Why:** Frame the whole Come Follow Me lesson and make the explanations welcoming
+without labeling the listener, while keeping natural speech and normal writing.
+
+**Dead ends / limitations:** No new content/render failure. Kept shared name
+normalization independent of numerical TTS dependencies so static exporting remains
+lightweight. Earlier setup/audio/player entries remain pending review; this request
+authorizes revisions and continued publication without confirming those entries.
+
+**Side effects:** Eleven playable sections, including the nine original scripture
+chapters. Revised MP3s receive hash-versioned URLs and old saved times are reset
+when their audio revision differs. The prior session/metadata/WAVs are preserved
+locally. Canonical scripture and the 89 unchanged WAV segments match the prior
+version. New helper scripts and exported MP3s are committed; models/working files
+remain ignored. Confirmed references/README retain their reviewed baseline.
+
+**Validation:** Introduction 56.0 seconds, review 74.4 seconds, total 61.09 minutes.
+All eleven MP3s decode as valid 24 kHz audio; all 160 verse records are unchanged.
+Exported written text matches canonical scripts; normalized text matches rendered
+speech. Cache mismatch/unsafe-filename guards passed. Browser checks verified
+introduction playback, autoplay into Isaiah 58, and written Eyring/Nelson initials.
+Further UI/publishing results will be recorded after completion; owner review is pending.
+
+**Additional checks:** Browser autoplay traversed introduction → Isaiah 58 and
+Isaiah 66 → Week in Review. Review finished without looping and Next was disabled.
+The phone-sized layout had no page overflow; fixed the count pill wrapping beside
+the longer introduction title. Standalone Python exported all eleven sections
+without numerical/TTS dependencies. Revised HTML versions its script/style URLs,
+and the player revalidates the library to avoid stale content after publication.
+
 ## 2026-10-11 — Create repository and publish Pages — [UNCONFIRMED]
 
 **What changed:** The owner explicitly authorized uploading the entire project

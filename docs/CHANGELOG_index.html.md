@@ -1,5 +1,13 @@
 # index.html Changelog
 
+## 2026-10-11 — Weekly study labels and description — [UNCONFIRMED]
+
+**What changed:** Changed chapter-specific controls to Previous/Next section, added direct introduction/review links, and used clarity/understanding wording in descriptive text.
+
+**Why:** Include weekly framing in the existing player and replace beginner labels with a more welcoming description.
+
+**Side effects / limitations:** Default new-listener heading and native fallback reference Lesson Introduction. Transcript roles remain Scripture and Commentary. Owner listening/UI feedback remains pending.
+
 ## 2026-10-11 — Mobile audio/transcript page — [UNCONFIRMED]
 
 **What changed:** Created the lesson header, chapter navigation, persistent audio

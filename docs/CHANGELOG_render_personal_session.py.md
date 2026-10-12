@@ -1,5 +1,13 @@
 # CHANGELOG - tools/render_personal_session.py
 
+## 2026-10-11 — Commentary-only lesson tracks and verified segment reuse — [UNCONFIRMED]
+
+**What changed:** Added safe introduction/review filenames, commentary-only validation, and an optional prior-render directory. Reuse requires matching original session, reader/model hashes, spoken text, full voice settings, WAV duration/rate, and valid mono samples. Added canonical Markdown transcript output using role-only headings.
+
+**Why:** Render two new framing tracks and nine revised openings while preserving unchanged scripture/commentary WAVs.
+
+**Side effects / limitations:** The first full-week rerender reused 89 unchanged WAVs. Only nine openings plus the two framing tracks were synthesized. Original voice settings, scripture text, and speech normalization were retained. Owner listening/UI feedback remains pending.
+
 ## 2026-10-11 - Full weekly chapter batch and natural endings - [UNCONFIRMED]
 
 **Status:** [UNCONFIRMED] - the full weekly audio set awaits listening review.

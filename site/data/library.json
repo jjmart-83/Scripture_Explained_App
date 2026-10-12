@@ -6,13 +6,86 @@
   "lessonUrl": "https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/42?lang=eng",
   "chapters": [
     {
+      "id": "lesson-introduction",
+      "kind": "introduction",
+      "number": null,
+      "title": "Lesson Introduction",
+      "focus": "A first look at the lesson and the themes connecting Isaiah 58–66.",
+      "verseCount": 0,
+      "duration": 56.04004166666667,
+      "audio": "audio/Week_Introduction.mp3",
+      "audioVersion": "73707e72e467",
+      "sources": [
+        {
+          "title": "Come, Follow Me lesson, October 12-18, 2026",
+          "url": "https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/42?lang=eng"
+        },
+        {
+          "title": "Isaiah 58, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/58?lang=eng"
+        },
+        {
+          "title": "Isaiah 59, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/59?lang=eng"
+        },
+        {
+          "title": "Isaiah 60, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/60?lang=eng"
+        },
+        {
+          "title": "Isaiah 61, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/61?lang=eng"
+        },
+        {
+          "title": "Isaiah 62, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/62?lang=eng"
+        },
+        {
+          "title": "Isaiah 65, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/65?lang=eng"
+        },
+        {
+          "title": "Luke 4:16-21: Jesus reads Isaiah",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/nt/luke/4?lang=eng"
+        }
+      ],
+      "segments": [
+        {
+          "role": "commentary",
+          "start": 0.0,
+          "duration": 14.412958333333334,
+          "text": "Welcome to this week's Come Follow Me study, The Redeemer Shall Come to Zion. We will read Isaiah chapters fifty-eight through sixty-six. Isaiah was a prophet in ancient Israel whose vivid language points us toward Jesus Christ."
+        },
+        {
+          "role": "commentary",
+          "start": 15.112958333333333,
+          "duration": 16.062625,
+          "text": "The lesson begins with Jesus reading Isaiah in Nazareth and announcing His mission to bring healing and freedom. Watch for four connected themes: worship that blesses others, Christ's power to rescue, His light gathering His people, and hope for His return."
+        },
+        {
+          "role": "commentary",
+          "start": 31.875583333333335,
+          "duration": 18.103,
+          "text": "One voice reads each chapter in full. A second offers thoughtfully prepared explanations, generated to illuminate the language and meaning of the scriptures and deepen understanding. This is personal study commentary informed by the Church's lesson and selected linked resources."
+        },
+        {
+          "role": "commentary",
+          "start": 50.678583333333336,
+          "duration": 5.361458333333333,
+          "text": "As you listen, consider: what do I learn about the Savior, and how can I respond to His love?"
+        }
+      ]
+    },
+    {
       "id": "isaiah-58",
+      "kind": "chapter",
       "number": 58,
       "title": "Isaiah 58",
       "focus": "Fasting, helping people in need, and finding joy in the Sabbath.",
       "verseCount": 14,
-      "duration": 432.29745833333334,
+      "duration": 426.7189583333333,
       "audio": "audio/Isaiah_58_Explained.mp3",
+      "audioVersion": "6fd45f59a924",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -35,12 +108,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 21.16358333333333,
-          "text": "This is a personal study reading of Isaiah chapter fifty-eight for the October twelfth through eighteenth Come Follow Me lesson. Isaiah was a prophet in ancient Israel. The scripture voice will read every verse, and a second voice will pause to explain. The explanations are generated study commentary, with help from sources linked in the lesson."
+          "duration": 15.585083333333333,
+          "text": "This study reading covers Isaiah chapter fifty-eight, with explanations generated to bring clarity to its language and deepen our understanding of its message. The chapter connects sincere fasting and joyful Sabbath worship with caring for people in need."
         },
         {
           "role": "scripture",
-          "start": 21.863583333333334,
+          "start": 16.285083333333333,
           "duration": 27.244,
           "verses": [
             {
@@ -55,13 +128,13 @@
         },
         {
           "role": "commentary",
-          "start": 49.80758333333333,
+          "start": 44.229083333333335,
           "duration": 23.941958333333332,
           "text": "The house of Jacob means Jacob's descendants, the people of Israel. Transgression means wrongdoing. These opening verses describe people who look eager to worship: they seek God and ask to know His ways. Yet Isaiah is told to point out their sins. The question is whether their everyday choices match their religious practices. Listen next for the specific problem God identifies."
         },
         {
           "role": "scripture",
-          "start": 74.44954166666666,
+          "start": 68.87104166666667,
           "duration": 40.94,
           "verses": [
             {
@@ -80,13 +153,13 @@
         },
         {
           "role": "commentary",
-          "start": 116.08954166666666,
+          "start": 110.51104166666667,
           "duration": 23.355916666666666,
           "text": "Fasting means voluntarily going without food for a religious purpose. These people wonder why God has not noticed their fasting. But they are still fighting and treating other people harshly. Bowing the head, wearing sackcloth, and sitting in ashes were outward signs of sorrow or humility. God asks them to look beyond those visible actions. What should change in the way they treat others?"
         },
         {
           "role": "scripture",
-          "start": 140.14545833333332,
+          "start": 134.56695833333333,
           "duration": 25.494,
           "verses": [
             {
@@ -101,13 +174,13 @@
         },
         {
           "role": "commentary",
-          "start": 166.33945833333334,
+          "start": 160.76095833333332,
           "duration": 38.28783333333333,
-          "text": "A yoke is a wooden beam used with animals pulling a load. Here it helps us picture oppression and heavy burdens. The next verse turns that picture into practical help: feed someone hungry, shelter someone without a home, and care for your own people. In the talk linked by the lesson, President Henry B Eyring explains how fast offerings, donations to help people in need, put this care into action. He describes a woman in Sierra Leone who received much-needed clothing and a blanket during wartime, and later gave a small offering herself to help others. Her experience makes Isaiah's words about food and clothing concrete."
+          "text": "A yoke is a wooden beam used with animals pulling a load. Here it helps us picture oppression and heavy burdens. The next verse turns that picture into practical help: feed someone hungry, shelter someone without a home, and care for your own people. In the talk linked by the lesson, President Henry B. Eyring explains how fast offerings, donations to help people in need, put this care into action. He describes a woman in Sierra Leone who received much-needed clothing and a blanket during wartime, and later gave a small offering herself to help others. Her experience makes Isaiah's words about food and clothing concrete."
         },
         {
           "role": "scripture",
-          "start": 205.32729166666667,
+          "start": 199.74879166666668,
           "duration": 65.13333333333334,
           "verses": [
             {
@@ -134,13 +207,13 @@
         },
         {
           "role": "commentary",
-          "start": 271.160625,
+          "start": 265.582125,
           "duration": 28.28125,
           "text": "Rearward means a guard behind you. Isaiah pictures God's care surrounding His people. A watered garden and a spring that keeps flowing are images of life and renewal, especially in a dry place. A breach is a gap or break. Repairing breaches and rebuilding ruined places suggest restoring a community where people can live safely. Notice the connection across these verses: helping someone who is struggling goes together with turning toward God."
         },
         {
           "role": "scripture",
-          "start": 300.141875,
+          "start": 294.563375,
           "duration": 32.15,
           "verses": [
             {
@@ -155,13 +228,13 @@
         },
         {
           "role": "commentary",
-          "start": 332.991875,
+          "start": 327.413375,
           "duration": 37.26766666666666,
-          "text": "The Sabbath is a day set apart for worship and rest. Latter-day Saints observe it on Sunday. Isaiah invites us to find joy in honoring the Lord. In the other talk linked by this lesson, Russell M Nelson explains that Sabbath choices can express our relationship with Heavenly Father. He describes rest and spiritual renewal, strengthening family relationships, and serving people who are lonely or in need. A useful question is: what could I choose this Sunday that helps me draw closer to God or show love to someone? That completes all fourteen verses of Isaiah fifty-eight."
+          "text": "The Sabbath is a day set apart for worship and rest. Latter-day Saints observe it on Sunday. Isaiah invites us to find joy in honoring the Lord. In the other talk linked by this lesson, Russell M. Nelson explains that Sabbath choices can express our relationship with Heavenly Father. He describes rest and spiritual renewal, strengthening family relationships, and serving people who are lonely or in need. A useful question is: what could I choose this Sunday that helps me draw closer to God or show love to someone? That completes all fourteen verses of Isaiah fifty-eight."
         },
         {
           "role": "commentary",
-          "start": 370.95954166666667,
+          "start": 365.38104166666665,
           "duration": 61.337916666666665,
           "text": "Chapter summary. Isaiah fifty-eight connects worship with the way we treat other people. It begins with a warning: people can go through religious practices while continuing to hurt others. It then describes the fast God desires: freeing people from burdens and meeting practical needs. The chapter closes by inviting us to honor the Sabbath and find joy in the Lord. Here are four lessons to take with you. First, let your worship change your daily actions. Prayer and fasting should help you become kinder. Second, notice people who need help. Sharing food, offering support, and caring for your own family can put faith into action. Third, seek God's guidance as you serve. Isaiah's pictures of light and a watered garden help us imagine the care and renewal God offers. Fourth, make room for God on the Sabbath. Choose time for worship, rest, and loving service. For this week, choose one small action: help someone with a burden, or plan something that helps you find joy in the Sabbath."
         }
@@ -169,12 +242,14 @@
     },
     {
       "id": "isaiah-59",
+      "kind": "chapter",
       "number": 59,
       "title": "Isaiah 59",
       "focus": "Jesus Christ as Savior, Intercessor, and Redeemer",
       "verseCount": 21,
-      "duration": 424.422875,
+      "duration": 427.961,
       "audio": "audio/Isaiah_59_Explained.mp3",
+      "audioVersion": "fd34d003d4bc",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -193,12 +268,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 13.349333333333334,
-          "text": "This study reading covers Isaiah chapter fifty-nine, with generated explanations for beginners. The chapter describes a community damaged by wrongdoing, then points toward the Lord's power to rescue and redeem."
+          "duration": 16.887458333333335,
+          "text": "This study reading covers Isaiah chapter fifty-nine, with explanations generated to bring clarity to its language and deepen our understanding of its message. The chapter describes a community damaged by wrongdoing, then points toward the Lord's power to rescue and redeem."
         },
         {
           "role": "scripture",
-          "start": 14.049333333333333,
+          "start": 17.587458333333334,
           "duration": 38.33866666666667,
           "verses": [
             {
@@ -221,13 +296,13 @@
         },
         {
           "role": "commentary",
-          "start": 53.088,
+          "start": 56.626125,
           "duration": 23.464458333333333,
           "text": "Iniquity means wrongdoing. Isaiah begins by saying that God still has power to save and hear. He then describes a community where violence, lies, and unfairness have damaged people's relationship with Him. Notice how many examples concern the way people treat one another. The chapter asks us to take honesty and justice seriously as part of our relationship with God."
         },
         {
           "role": "scripture",
-          "start": 77.25245833333334,
+          "start": 80.79058333333333,
           "duration": 41.858,
           "verses": [
             {
@@ -250,13 +325,13 @@
         },
         {
           "role": "commentary",
-          "start": 119.81045833333333,
+          "start": 123.34858333333334,
           "duration": 23.160541666666667,
           "text": "A cockatrice is a dangerous snake in this old translation. Its eggs picture something harmful being produced and spread. A spider's web looks woven, but it cannot serve as useful clothing. These images help explain the results of wrongdoing: it can spread harm and fail to give lasting protection. Crooked paths describe a way of life that leads people away from peace."
         },
         {
           "role": "scripture",
-          "start": 143.671,
+          "start": 147.209125,
           "duration": 76.1,
           "verses": [
             {
@@ -291,13 +366,13 @@
         },
         {
           "role": "commentary",
-          "start": 220.471,
+          "start": 224.009125,
           "duration": 23.095416666666665,
           "text": "The speaker now says we and our, admitting the community's problems. Groping in darkness pictures people who cannot find a clear way forward. Equity means fairness. When truth falls in the street, honesty and fairness have lost their place in public life. Even someone who tries to leave evil becomes a target. The people's confession leads into the next question: who will come to help?"
         },
         {
           "role": "scripture",
-          "start": 244.26641666666666,
+          "start": 247.80454166666667,
           "duration": 48.428666666666665,
           "verses": [
             {
@@ -320,13 +395,13 @@
         },
         {
           "role": "commentary",
-          "start": 293.39508333333333,
+          "start": 296.9332083333333,
           "duration": 26.002125,
           "text": "An intercessor is someone who steps in to help others. The Lord sees that nobody is providing the needed rescue, so He acts with His own power. His arm represents strength; the armor pictures righteousness and salvation. The lesson's Scripture Helps connects this role with Jesus Christ, who brings mercy and stands as our Mediator. The warrior image expresses God's resolve to confront evil and save His people."
         },
         {
           "role": "scripture",
-          "start": 320.09720833333336,
+          "start": 323.63533333333334,
           "duration": 27.328666666666667,
           "verses": [
             {
@@ -341,13 +416,13 @@
         },
         {
           "role": "commentary",
-          "start": 348.125875,
+          "start": 351.664,
           "duration": 26.240875,
           "text": "A redeemer rescues or frees someone. Verse twenty joins the Redeemer's coming with people turning away from transgression, or sin. Zion is the community God is rescuing. Seed means descendants in verse twenty-one. The promise reaches beyond one generation: God's Spirit and His words are to remain among His people and their children. The chapter moves from admitting wrongdoing toward a future shaped by God's help."
         },
         {
           "role": "commentary",
-          "start": 375.06675,
+          "start": 378.604875,
           "duration": 49.356125,
           "text": "Chapter summary. Isaiah fifty-nine begins with injustice and separation from God. The people acknowledge that their actions have produced darkness and suffering. The Lord then steps forward as the powerful rescuer, and the chapter ends with redemption and a covenant promise. Here are four takeaways. First, worship belongs with honesty and fair treatment of others. Second, acknowledging a wrong is an important step toward changing it. Third, look to Jesus Christ as the Redeemer who can help you turn toward God. Fourth, let God's words shape your life and the influence you have on others. One small application is to repair a dishonest or unkind choice: tell the truth, offer an apology, or stand beside someone being treated unfairly. Let that action be part of turning toward the Lord."
         }
@@ -355,12 +430,14 @@
     },
     {
       "id": "isaiah-60",
+      "kind": "chapter",
       "number": 60,
       "title": "Isaiah 60",
       "focus": "The Lord's light and the gathering of His people",
       "verseCount": 22,
-      "duration": 444.873125,
+      "duration": 448.5414583333333,
       "audio": "audio/Isaiah_60_Explained.mp3",
+      "audioVersion": "1fc6744141a6",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -383,12 +460,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 12.589625,
-          "text": "This study reading covers Isaiah chapter sixty, with generated explanations for beginners. Isaiah pictures Zion emerging from darkness into God's light, with people gathering from many nations."
+          "duration": 16.257958333333335,
+          "text": "This study reading covers Isaiah chapter sixty, with explanations generated to bring clarity to its language and deepen our understanding of its message. Isaiah pictures Zion emerging from darkness into God's light, with people gathering from many nations."
         },
         {
           "role": "scripture",
-          "start": 13.289625,
+          "start": 16.957958333333334,
           "duration": 50.62733333333333,
           "verses": [
             {
@@ -415,13 +492,13 @@
         },
         {
           "role": "commentary",
-          "start": 64.61695833333333,
+          "start": 68.28529166666667,
           "duration": 23.790041666666667,
           "text": "Isaiah speaks to Zion as though the city were a person. Zion here is associated with Jerusalem and God's people. Light pictures God's presence and guidance; darkness pictures the world's need for that guidance. Gentiles here are people from other nations. The returning sons and daughters picture a scattered family being brought together. Notice that the light draws people toward the Lord."
         },
         {
           "role": "scripture",
-          "start": 89.107,
+          "start": 92.77533333333334,
           "duration": 49.772666666666666,
           "verses": [
             {
@@ -444,13 +521,13 @@
         },
         {
           "role": "commentary",
-          "start": 139.57966666666667,
+          "start": 143.248,
           "duration": 22.248875,
           "text": "Dromedaries are camels. Caravans, ships, flocks, gold, and incense show people coming from far away with things they value. Isaiah's picture is larger than a single city becoming wealthy: the gifts are brought to honor the Lord, and scattered children are brought home. The unusual place names help us imagine many regions participating in this gathering."
         },
         {
           "role": "scripture",
-          "start": 162.52854166666665,
+          "start": 166.196875,
           "duration": 61.93333333333333,
           "verses": [
             {
@@ -477,13 +554,13 @@
         },
         {
           "role": "commentary",
-          "start": 225.161875,
+          "start": 228.83020833333333,
           "duration": 23.377625,
           "text": "The open gates and rebuilt walls picture a city restored after suffering. Former enemies now recognize the Lord's city. A sanctuary is a holy place of worship. Isaiah describes a change from humiliation toward honor and safety. The strong warning to opposing nations also shows that God's peace comes with His judgment against resistance and evil."
         },
         {
           "role": "scripture",
-          "start": 249.2395,
+          "start": 252.90783333333334,
           "duration": 48.898,
           "verses": [
             {
@@ -506,13 +583,13 @@
         },
         {
           "role": "commentary",
-          "start": 298.8375,
+          "start": 302.5058333333333,
           "duration": 24.441208333333332,
           "text": "The pictures of milk and nourishment describe support and care. Brass replaced by gold and iron replaced by silver picture an improvement in the people's circumstances. But notice the greatest improvements: peace, righteousness, and the end of violence. Salvation and praise become the names of the walls and gates. Isaiah is helping us imagine what a community under God's care can become."
         },
         {
           "role": "scripture",
-          "start": 323.9787083333333,
+          "start": 327.64704166666667,
           "duration": 44.39666666666667,
           "verses": [
             {
@@ -535,13 +612,13 @@
         },
         {
           "role": "commentary",
-          "start": 369.075375,
+          "start": 372.74370833333336,
           "duration": 26.1975,
-          "text": "God Himself becomes the lasting source of light. The lesson's Scripture Helps describes both Israel's restoration and a future Zion of peace. We can also think about how we share the Savior's light now. In the linked message, Bonnie H Cordon recalls learning to aim a flashlight at another person's path. Her example invites us to make our help useful to the person receiving it, guiding them toward Christ with thoughtful care."
+          "text": "God Himself becomes the lasting source of light. The lesson's Scripture Helps describes both Israel's restoration and a future Zion of peace. We can also think about how we share the Savior's light now. In the linked message, Bonnie H. Cordon recalls learning to aim a flashlight at another person's path. Her example invites us to make our help useful to the person receiving it, guiding them toward Christ with thoughtful care."
         },
         {
           "role": "commentary",
-          "start": 395.972875,
+          "start": 399.64120833333334,
           "duration": 48.90025,
           "text": "Chapter summary. Isaiah sixty pictures God's people rising into His light, gathering from far away, and finding restoration. Nations bring gifts, broken places are rebuilt, and violence gives way to peace. The chapter ends with the Lord as an everlasting light. Here are four takeaways. First, seek the guidance God gives when life feels confusing. Second, make room for people who are coming toward Him. Third, measure a thriving community by its peace, fairness, and care for people. Fourth, share light in a way that actually helps someone. A small application might be welcoming a new person, explaining something patiently, or helping someone take a manageable next step. Isaiah's large picture of gathering can help us notice the people within reach of our own kindness."
         }
@@ -549,12 +626,14 @@
     },
     {
       "id": "isaiah-61",
+      "kind": "chapter",
       "number": 61,
       "title": "Isaiah 61",
       "focus": "The Savior's mission to heal, free, and comfort",
       "verseCount": 11,
-      "duration": 320.59041666666667,
+      "duration": 324.345625,
       "audio": "audio/Isaiah_61_Explained.mp3",
+      "audioVersion": "64483c48c8f6",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -577,12 +656,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 12.76325,
-          "text": "This study reading covers Isaiah chapter sixty-one, with generated explanations for beginners. Its opening words help us recognize the mission of Jesus Christ and the hope He brings to people who are hurting."
+          "duration": 16.518458333333335,
+          "text": "This study reading covers Isaiah chapter sixty-one, with explanations generated to bring clarity to its language and deepen our understanding of its message. Its opening words help us recognize the mission of Jesus Christ and the hope He brings to people who are hurting."
         },
         {
           "role": "scripture",
-          "start": 13.46325,
+          "start": 17.218458333333334,
           "duration": 44.39666666666667,
           "verses": [
             {
@@ -601,13 +680,13 @@
         },
         {
           "role": "commentary",
-          "start": 58.559916666666666,
+          "start": 62.315125,
           "duration": 28.954166666666666,
           "text": "Anointed means chosen and set apart for a sacred mission. Good tidings means good news. Luke chapter four records Jesus reading these words and announcing their fulfillment in Him. Binding up a broken heart pictures healing and care. Ashes were a sign of grief; beauty, joyful oil, and a garment of praise picture sorrow being changed. The acceptable year also recalls Jubilee, when ancient Israel was instructed to release burdens and restore freedom."
         },
         {
           "role": "scripture",
-          "start": 88.21408333333333,
+          "start": 91.96929166666666,
           "duration": 31.084,
           "verses": [
             {
@@ -626,13 +705,13 @@
         },
         {
           "role": "commentary",
-          "start": 119.99808333333333,
+          "start": 123.75329166666667,
           "duration": 23.703208333333333,
           "text": "Wastes and desolations mean ruined places. The picture widens from healing individuals to rebuilding a community that has suffered for generations. Strangers and people from other nations participate in its restoration. Ministers means people who serve. The new calling of God's people gives them a responsibility to worship and serve Him as their community is renewed."
         },
         {
           "role": "scripture",
-          "start": 144.40129166666668,
+          "start": 148.1565,
           "duration": 34.988,
           "verses": [
             {
@@ -651,13 +730,13 @@
         },
         {
           "role": "commentary",
-          "start": 180.08929166666667,
+          "start": 183.8445,
           "duration": 27.109166666666667,
           "text": "An everlasting covenant is a lasting sacred relationship with God and His promises. Notice the Lord's character: He loves justice and rejects robbery even when someone uses it to provide a religious offering. Faithful worship should go together with fair actions. Seed and offspring mean descendants. The promised blessings reach families and future generations, replacing the community's shame with renewed dignity and joy."
         },
         {
           "role": "scripture",
-          "start": 207.89845833333334,
+          "start": 211.65366666666668,
           "duration": 33.11,
           "verses": [
             {
@@ -672,13 +751,13 @@
         },
         {
           "role": "commentary",
-          "start": 241.70845833333334,
+          "start": 245.46366666666665,
           "duration": 23.985375,
           "text": "The speaker rejoices as if dressed for a wedding. Clothing pictures salvation and righteousness received through God's care. A garden is another image of growth: righteousness and praise spring up like living plants. These pictures connect the opening mission of healing and comfort with a joyful response. The lesson invites us to notice how the Savior's work can bring hope into places of grief."
         },
         {
           "role": "commentary",
-          "start": 266.39383333333336,
+          "start": 270.1490416666667,
           "duration": 54.196583333333336,
           "text": "Chapter summary. Isaiah sixty-one announces a mission of good news, healing, freedom, and comfort. Jesus later identified this prophecy with His own work. The chapter pictures ruined communities being restored, families receiving lasting blessings, and God's people rejoicing in His salvation. Here are four takeaways. First, learn to recognize Jesus Christ through the care He offers to people who suffer. Second, remember that grief and discouragement belong within the reach of His compassion. Third, join worship with honest and fair actions. Fourth, look for signs of new growth as you turn toward God. A small application is to comfort someone without rushing them, offer practical help, or remember a way the Savior has given you hope. The chapter's images of changed clothing and a growing garden invite us to expect renewal through Him."
         }
@@ -686,12 +765,14 @@
     },
     {
       "id": "isaiah-62",
+      "kind": "chapter",
       "number": 62,
       "title": "Isaiah 62",
       "focus": "God's faithful love, light, and gathering",
       "verseCount": 12,
-      "duration": 270.4699166666667,
+      "duration": 274.094875,
       "audio": "audio/Isaiah_62_Explained.mp3",
+      "audioVersion": "863010691ac7",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -706,12 +787,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 13.805166666666667,
-          "text": "This study reading covers Isaiah chapter sixty-two, with generated explanations for beginners. Isaiah describes God's continuing commitment to Zion through images of light, new names, and a prepared path home."
+          "duration": 17.430125,
+          "text": "This study reading covers Isaiah chapter sixty-two, with explanations generated to bring clarity to its language and deepen our understanding of its message. Isaiah describes God's continuing commitment to Zion through images of light, new names, and a prepared path home."
         },
         {
           "role": "scripture",
-          "start": 14.505166666666666,
+          "start": 18.130125,
           "duration": 60.547333333333334,
           "verses": [
             {
@@ -738,13 +819,13 @@
         },
         {
           "role": "commentary",
-          "start": 75.7525,
+          "start": 79.37745833333334,
           "duration": 22.9435,
           "text": "The city is described as precious to God. A diadem is a royal crown. The unfamiliar names in verse four express God's delight in His people and a restored relationship pictured as marriage. A bridegroom is a man at his wedding. That joy helps us picture God's love for a community that once felt abandoned. The new names announce a new identity and future."
         },
         {
           "role": "scripture",
-          "start": 99.396,
+          "start": 103.02095833333334,
           "duration": 42.37,
           "verses": [
             {
@@ -767,13 +848,13 @@
         },
         {
           "role": "commentary",
-          "start": 142.466,
+          "start": 146.09095833333333,
           "duration": 22.487666666666666,
           "text": "Watchmen were guards who stayed alert on a city's walls. Here their steady calling also pictures prayer and concern for Jerusalem's restoration. The promise about food means people will enjoy what they have worked to grow instead of losing it to enemies. Corn is an older word for grain here. The passage joins faithful waiting and prayer with hope for a secure life."
         },
         {
           "role": "scripture",
-          "start": 165.65366666666668,
+          "start": 169.278625,
           "duration": 32.94,
           "verses": [
             {
@@ -792,13 +873,13 @@
         },
         {
           "role": "commentary",
-          "start": 199.29366666666667,
+          "start": 202.918625,
           "duration": 22.270583333333335,
           "text": "A standard is a raised banner people can gather around. Clearing stones from the highway pictures preparing a route so people can come home. The daughter of Zion is a way of addressing the city and its people. The Redeemer gives them a new description: sought out and cared for. We can reflect on how our actions make another person's path toward God more welcoming."
         },
         {
           "role": "commentary",
-          "start": 222.26425,
+          "start": 225.88920833333333,
           "duration": 48.205666666666666,
           "text": "Chapter summary. Isaiah sixty-two pictures God's people receiving light, honor, and a renewed relationship with Him. Watchmen continue to call for restoration, and the highway is prepared for the people's return. The chapter ends with a community known as redeemed and sought out. Here are four takeaways. First, remember the value God places on His people. Second, bring your hopes and concerns to Him in prayer. Third, help remove obstacles for someone trying to draw closer to God. Fourth, let His faithful love influence the way you describe yourself and others. A small application is to welcome someone who feels overlooked, answer a question patiently, or make a place where someone can belong. The cleared road gives us a practical image of helping people find their way home."
         }
@@ -806,12 +887,14 @@
     },
     {
       "id": "isaiah-63",
+      "kind": "chapter",
       "number": 63,
       "title": "Isaiah 63",
       "focus": "The Redeemer's justice, compassion, and faithful care",
       "verseCount": 19,
-      "duration": 368.896625,
+      "duration": 372.608375,
       "audio": "audio/Isaiah_63_Explained.mp3",
+      "audioVersion": "4c7514afc9ca",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -830,12 +913,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 13.501291666666667,
-          "text": "This study reading covers Isaiah chapter sixty-three, with generated explanations for beginners. The chapter moves from a powerful image of judgment to memories of God's kindness and a heartfelt prayer for His help."
+          "duration": 17.213041666666665,
+          "text": "This study reading covers Isaiah chapter sixty-three, with explanations generated to bring clarity to its language and deepen our understanding of its message. The chapter moves from a powerful image of judgment to memories of God's kindness and a heartfelt prayer for His help."
         },
         {
           "role": "scripture",
-          "start": 14.201291666666666,
+          "start": 17.91304166666667,
           "duration": 65.22,
           "verses": [
             {
@@ -866,13 +949,13 @@
         },
         {
           "role": "commentary",
-          "start": 80.12129166666666,
+          "start": 83.83304166666667,
           "duration": 24.311,
           "text": "A winepress was used to crush grapes, staining the worker's clothing with juice. Isaiah uses that strong red-clothing image to describe God's judgment against evil. Edom and Bozrah name an enemy land and one of its cities in the picture. Doctrine and Covenants section one hundred thirty-three uses the same imagery for the Savior's return. Notice the speaker's identity: He is mighty to save."
         },
         {
           "role": "scripture",
-          "start": 105.13229166666666,
+          "start": 108.84404166666667,
           "duration": 38.806666666666665,
           "verses": [
             {
@@ -891,13 +974,13 @@
         },
         {
           "role": "commentary",
-          "start": 144.63895833333333,
+          "start": 148.35070833333333,
           "duration": 22.5745,
           "text": "Lovingkindness means faithful, compassionate care. The tone changes as the speaker remembers God's goodness. Verse nine describes the Lord sharing His people's suffering and carrying them in love. The lesson asks us to notice these descriptions of the Savior. Remembering His compassion helps us see His character alongside the chapter's earlier image of judgment."
         },
         {
           "role": "scripture",
-          "start": 167.91345833333332,
+          "start": 171.62520833333335,
           "duration": 48.664,
           "verses": [
             {
@@ -924,13 +1007,13 @@
         },
         {
           "role": "commentary",
-          "start": 217.27745833333333,
+          "start": 220.98920833333332,
           "duration": 22.335708333333333,
           "text": "Moses was the prophet who led the Israelites out of Egypt. The sea being divided recalls their escape from slavery. The community remembers both its rebellion and the Lord's earlier deliverance. The gentle picture of an animal resting in a valley contrasts with danger during the journey. Recalling God's past help gives this prayer a reason to hope for help again."
         },
         {
           "role": "scripture",
-          "start": 240.31316666666666,
+          "start": 244.02491666666666,
           "duration": 54.08266666666667,
           "verses": [
             {
@@ -957,13 +1040,13 @@
         },
         {
           "role": "commentary",
-          "start": 295.09583333333336,
+          "start": 298.80758333333335,
           "duration": 24.656333333333333,
           "text": "The people now speak directly to God as their Father and Redeemer. The sounding of thy bowels is an old expression connected with deep inward feeling and compassion. They are distressed because their holy place has been trampled and God feels distant. This is a lament, a prayer that brings grief and difficult questions to Him. It continues into the next chapter as a plea for His presence and mercy."
         },
         {
           "role": "commentary",
-          "start": 320.45216666666664,
+          "start": 324.1639166666667,
           "duration": 48.44445833333333,
           "text": "Chapter summary. Isaiah sixty-three shows the Redeemer confronting evil, then turns to His loving care for His people. Memories of deliverance through Moses lead into a prayer from a suffering community. The Lord is described both as mighty to save and as compassionate toward people in pain. Here are four takeaways. First, take God's concern for justice seriously. Second, remember the kindness and help He has already given. Third, look to the Savior's compassion when you are hurting. Fourth, bring honest sorrow and questions to Him in prayer. A small application is to write down one way you have received help, or thank someone whose kindness made a difficult time easier. Remembering care received can give you something concrete to hold onto while seeking God's help again."
         }
@@ -971,12 +1054,14 @@
     },
     {
       "id": "isaiah-64",
+      "kind": "chapter",
       "number": 64,
       "title": "Isaiah 64",
       "focus": "Seeking God's presence and preparing for Christ's return",
       "verseCount": 12,
-      "duration": 285.09383333333335,
+      "duration": 288.71875,
       "audio": "audio/Isaiah_64_Explained.mp3",
+      "audioVersion": "f2b8f022167c",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -995,12 +1080,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 12.112083333333333,
-          "text": "This study reading covers Isaiah chapter sixty-four, with generated explanations for beginners. It continues the prayer from the previous chapter, asking God to come near and restore His people."
+          "duration": 15.737,
+          "text": "This study reading covers Isaiah chapter sixty-four, with explanations generated to bring clarity to its language and deepen our understanding of its message. It continues the prayer from the previous chapter, asking God to come near and restore His people."
         },
         {
           "role": "scripture",
-          "start": 12.812083333333334,
+          "start": 16.437,
           "duration": 57.04866666666667,
           "verses": [
             {
@@ -1027,13 +1112,13 @@
         },
         {
           "role": "commentary",
-          "start": 70.56075,
+          "start": 74.18566666666666,
           "duration": 23.616375,
           "text": "Rend means tear open. The people long for heaven to open and for God to come with unmistakable power. Mountains, fire, and boiling water picture how overwhelming His presence can be. Terrible here can mean awe-inspiring or fearsome. The prayer also remembers that He meets people who do what is right. The lesson connects this longing with preparing for the Savior's coming."
         },
         {
           "role": "scripture",
-          "start": 94.877125,
+          "start": 98.50204166666667,
           "duration": 25.238,
           "verses": [
             {
@@ -1048,13 +1133,13 @@
         },
         {
           "role": "commentary",
-          "start": 120.815125,
+          "start": 124.44004166666667,
           "duration": 23.073708333333332,
           "text": "The community admits its sins. Fading leaves and wind picture how wrongdoing has left the people vulnerable and scattered. The language about filthy rags expresses their need for cleansing and help. This confession belongs within a prayer to God: they recognize the harm and seek a restored relationship. In the next verses, notice the hopeful name they still use for Him."
         },
         {
           "role": "scripture",
-          "start": 144.58883333333333,
+          "start": 148.21375,
           "duration": 17.579333333333334,
           "verses": [
             {
@@ -1069,13 +1154,13 @@
         },
         {
           "role": "commentary",
-          "start": 162.86816666666667,
+          "start": 166.49308333333335,
           "duration": 21.966708333333333,
           "text": "A potter shapes clay into something useful. The people call God their Father and compare themselves to clay in His hands. Even while admitting wrongdoing, they remember that they belong to Him and ask for mercy. This image invites us to be willing to change. Repentance means turning away from wrong choices and turning toward God, trusting Him to help shape our lives."
         },
         {
           "role": "scripture",
-          "start": 185.534875,
+          "start": 189.15979166666668,
           "duration": 24.38533333333333,
           "verses": [
             {
@@ -1094,13 +1179,13 @@
         },
         {
           "role": "commentary",
-          "start": 210.62020833333332,
+          "start": 214.245125,
           "duration": 26.045541666666665,
-          "text": "The prayer ends by naming ruined cities and a burned holy house, a place of worship. The people ask for God's help in their devastation. The lesson links this chapter with Christ's future return. In his linked message about preparing the world for that day, President Russell M Nelson encourages strengthening faith in Jesus Christ and participating in His work now. Waiting can include faithful choices, learning, and service."
+          "text": "The prayer ends by naming ruined cities and a burned holy house, a place of worship. The people ask for God's help in their devastation. The lesson links this chapter with Christ's future return. In his linked message about preparing the world for that day, President Russell M. Nelson encourages strengthening faith in Jesus Christ and participating in His work now. Waiting can include faithful choices, learning, and service."
         },
         {
           "role": "commentary",
-          "start": 237.36575,
+          "start": 240.99066666666667,
           "duration": 47.72808333333333,
           "text": "Chapter summary. Isaiah sixty-four is a prayer for God's presence, forgiveness, and restoration. The people remember His power, admit their need for help, and call Him their Father. The potter and clay picture a relationship in which God can shape them as they turn toward Him. Here are four takeaways. First, bring your need for help to God in prayer. Second, be honest about choices that need to change. Third, remember that asking for mercy goes with being willing to learn and grow. Fourth, prepare for the Savior through faithful actions today. A small application is to choose one habit that helps you become more teachable, such as listening carefully, praying sincerely, or making a needed apology. Let the picture of clay in the potter's hands remind you that growth can continue."
         }
@@ -1108,12 +1193,14 @@
     },
     {
       "id": "isaiah-65",
+      "kind": "chapter",
       "number": 65,
       "title": "Isaiah 65",
       "focus": "Responding to God and hoping for the Savior's reign of peace",
       "verseCount": 25,
-      "duration": 469.58254166666666,
+      "duration": 473.1206666666667,
       "audio": "audio/Isaiah_65_Explained.mp3",
+      "audioVersion": "69be4369a56f",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -1136,12 +1223,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 13.327625,
-          "text": "This study reading covers Isaiah chapter sixty-five, with generated explanations for beginners. God answers the people's prayer by addressing their choices and describing a future of renewed life and peace."
+          "duration": 16.86575,
+          "text": "This study reading covers Isaiah chapter sixty-five, with explanations generated to bring clarity to its language and deepen our understanding of its message. God answers the people's prayer by addressing their choices and describing a future of renewed life and peace."
         },
         {
           "role": "scripture",
-          "start": 14.027625,
+          "start": 17.56575,
           "duration": 76.61266666666667,
           "verses": [
             {
@@ -1176,13 +1263,13 @@
         },
         {
           "role": "commentary",
-          "start": 91.34029166666667,
+          "start": 94.87841666666667,
           "duration": 25.871875,
           "text": "God describes Himself holding out His hands to people who keep turning away. The forbidden foods and worship practices belong to the setting of ancient Israel's law and worship. Notice the attitude in verse five: people claim to be holier than others while ignoring God's direction. Isaiah's warning challenges both rebellion and pride. The invitation to respond to God stands beside the seriousness of refusing Him."
         },
         {
           "role": "scripture",
-          "start": 117.91216666666666,
+          "start": 121.45029166666667,
           "duration": 33.62266666666667,
           "verses": [
             {
@@ -1201,13 +1288,13 @@
         },
         {
           "role": "commentary",
-          "start": 152.23483333333334,
+          "start": 155.77295833333332,
           "duration": 21.727958333333333,
           "text": "A cluster of grapes still containing good fruit pictures something worth preserving. God promises to preserve His servants rather than treat everyone as the same. Seed means descendants. Flocks and herds in safe pastures picture a restored home and a secure future. The chapter's warnings are followed by a promise of care for people who seek the Lord."
         },
         {
           "role": "scripture",
-          "start": 174.66279166666666,
+          "start": 178.20091666666667,
           "duration": 75.374,
           "verses": [
             {
@@ -1238,13 +1325,13 @@
         },
         {
           "role": "commentary",
-          "start": 250.73679166666668,
+          "start": 254.27491666666666,
           "duration": 22.227166666666665,
           "text": "The contrast between eating and hunger, joy and sorrow, shows two different responses to God leading to different outcomes. The central issue is that people were called but would not listen. The God of truth is the one in whom His servants place their trust. As former troubles fade from view, the passage prepares us for the larger promise of a renewed creation."
         },
         {
           "role": "scripture",
-          "start": 273.6639583333333,
+          "start": 277.20208333333335,
           "duration": 29.206666666666667,
           "verses": [
             {
@@ -1263,13 +1350,13 @@
         },
         {
           "role": "commentary",
-          "start": 303.570625,
+          "start": 307.10875,
           "duration": 23.095416666666665,
           "text": "New heavens and a new earth picture God's renewal of the world. Jerusalem becomes a place of joy rather than weeping. The lesson points to the Savior's future reign. In Church teaching, the Millennium is the thousand-year period of peace when Jesus Christ reigns after His Second Coming. These verses help us imagine why His coming can be a source of hope and rejoicing."
         },
         {
           "role": "scripture",
-          "start": 327.36604166666666,
+          "start": 330.90416666666664,
           "duration": 66.56333333333333,
           "verses": [
             {
@@ -1300,13 +1387,13 @@
         },
         {
           "role": "commentary",
-          "start": 394.629375,
+          "start": 398.1675,
           "duration": 26.06725,
           "text": "An infant of days means a baby whose life lasts only a few days. Isaiah contrasts such loss with long, full lives. Houses, gardens, and work that benefits the people doing it picture security. Even natural enemies are shown living peacefully together. The tenth Article of Faith teaches that Christ will reign personally on earth and that the earth will be renewed. The images here help us look toward that promised peace."
         },
         {
           "role": "commentary",
-          "start": 421.396625,
+          "start": 424.93475,
           "duration": 48.185916666666664,
           "text": "Chapter summary. Isaiah sixty-five calls people to respond to God honestly and humbly. It warns about stubborn refusal and pride, then promises preservation and a renewed future for His people. The final picture includes joy, secure homes, fruitful work, and peace across creation. Here are four takeaways. First, listen for God's direction instead of simply defending your own choices. Second, treat other people with humility rather than declaring yourself better than they are. Third, let the Savior's promised future strengthen your hope. Fourth, practice the kind of peace and care you look forward to in His reign. A small application is to help make a home, classroom, or conversation more peaceful. Isaiah's future picture can shape the way we live with other people today."
         }
@@ -1314,12 +1401,14 @@
     },
     {
       "id": "isaiah-66",
+      "kind": "chapter",
       "number": 66,
       "title": "Isaiah 66",
       "focus": "Humble worship, divine comfort, and the gathering of all nations",
       "verseCount": 24,
-      "duration": 495.54245833333334,
+      "duration": 499.01545833333336,
       "audio": "audio/Isaiah_66_Explained.mp3",
+      "audioVersion": "0bfe6c42bd58",
       "sources": [
         {
           "title": "Come, Follow Me lesson, October 12-18, 2026",
@@ -1334,12 +1423,12 @@
         {
           "role": "commentary",
           "start": 0.0,
-          "duration": 15.107541666666666,
-          "text": "This study reading covers Isaiah chapter sixty-six, with generated explanations for beginners. The final chapter brings together humble worship, God's comfort, the seriousness of judgment, and the gathering of people from many nations."
+          "duration": 18.580541666666665,
+          "text": "This study reading covers Isaiah chapter sixty-six, with explanations generated to bring clarity to its language and deepen our understanding of its message. The final chapter brings together humble worship, God's comfort, the seriousness of judgment, and the gathering of people from many nations."
         },
         {
           "role": "scripture",
-          "start": 15.807541666666667,
+          "start": 19.280541666666668,
           "duration": 62.97866666666667,
           "verses": [
             {
@@ -1362,13 +1451,13 @@
         },
         {
           "role": "commentary",
-          "start": 79.48620833333334,
+          "start": 82.95920833333334,
           "duration": 23.985375,
           "text": "God begins as Creator of heaven and earth, then points to the heart of the worshipper. Contrite means sincerely sorry for wrongdoing and willing to change. Trembling at His word pictures taking Him seriously. The severe comparisons between sacrifices and offensive actions expose worship joined with disobedience. The question is what kind of heart we bring when we offer our worship."
         },
         {
           "role": "scripture",
-          "start": 104.17158333333333,
+          "start": 107.64458333333333,
           "duration": 54.01866666666667,
           "verses": [
             {
@@ -1395,13 +1484,13 @@
         },
         {
           "role": "commentary",
-          "start": 158.89025,
+          "start": 162.36325,
           "duration": 22.704708333333333,
           "text": "Some faithful people are being rejected by others. God promises that the outcome will bring them joy. The chapter then pictures Zion like a mother giving birth, with a new community appearing surprisingly quickly. Travail means the struggle and pain of childbirth. The image emphasizes God's power to bring His purposes to fulfillment and give new life to His people."
         },
         {
           "role": "scripture",
-          "start": 182.29495833333334,
+          "start": 185.76795833333333,
           "duration": 54.40266666666667,
           "verses": [
             {
@@ -1428,13 +1517,13 @@
         },
         {
           "role": "commentary",
-          "start": 237.397625,
+          "start": 240.870625,
           "duration": 23.18225,
           "text": "Jerusalem is pictured as a mother who nourishes and comforts her children. Dandled upon her knees means being lovingly held and bounced, as a caregiver might hold a small child. Peace flows like a river. The Lord uses a mother's comforting care to help us imagine His own compassion. Notice the invitation to rejoice with people whose sorrow is being replaced by hope."
         },
         {
           "role": "scripture",
-          "start": 261.279875,
+          "start": 264.752875,
           "duration": 33.324,
           "verses": [
             {
@@ -1453,13 +1542,13 @@
         },
         {
           "role": "commentary",
-          "start": 295.303875,
+          "start": 298.776875,
           "duration": 23.160541666666667,
           "text": "Fire, a whirlwind, and a sword picture the force and seriousness of God's judgment. The references to forbidden foods and worship in gardens describe practices condemned in ancient Israel's setting. The lesson places these chapters within the hope of Christ's coming reign. That hope includes God's response to evil as well as His comfort and peace for His people."
         },
         {
           "role": "scripture",
-          "start": 319.1644166666667,
+          "start": 322.63741666666664,
           "duration": 94.04133333333333,
           "verses": [
             {
@@ -1494,15 +1583,94 @@
         },
         {
           "role": "commentary",
-          "start": 413.90575,
+          "start": 417.37875,
           "duration": 28.520041666666668,
           "text": "Tongues means languages. The gathering reaches many peoples and faraway places, and those who know the Lord share His glory with others. Levites were members of a tribe associated with service in ancient Israel's worship. The chapter promises continuing worship in God's renewed creation, then closes with a stark image of judgment. The contrast leaves us with an important choice: receive God's invitation with humility and live in response to Him."
         },
         {
           "role": "commentary",
-          "start": 443.12579166666666,
+          "start": 446.59879166666667,
           "duration": 52.416666666666664,
           "text": "Chapter summary. Isaiah sixty-six begins with humble hearts taking God's word seriously. It pictures the restoration of Zion, tender comfort, and peace, while also warning about judgment. Its vision reaches across nations and languages as people gather to worship the Lord. Here are four takeaways. First, bring a teachable and repentant heart to worship. Second, remember the tenderness in God's care when you need comfort. Third, join His work by welcoming and helping people beyond your familiar circle. Fourth, let the hope of His renewed world encourage faithful choices now. A small application is to listen respectfully to someone, comfort a person who is struggling, or make a sincere change in your own behavior. These final chapters invite us to know the Redeemer through both His mighty power and His compassionate love."
+        }
+      ]
+    },
+    {
+      "id": "week-in-review",
+      "kind": "summary",
+      "number": null,
+      "title": "Week in Review",
+      "focus": "Bring the week's themes together and choose one way to put them into practice.",
+      "verseCount": 0,
+      "duration": 74.42320833333333,
+      "audio": "audio/Week_in_Review.mp3",
+      "audioVersion": "fad83f2f4c2b",
+      "sources": [
+        {
+          "title": "Come, Follow Me lesson, October 12-18, 2026",
+          "url": "https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026/42?lang=eng"
+        },
+        {
+          "title": "Isaiah 58, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/58?lang=eng"
+        },
+        {
+          "title": "Isaiah 59, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/59?lang=eng"
+        },
+        {
+          "title": "Isaiah 60, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/60?lang=eng"
+        },
+        {
+          "title": "Isaiah 61, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/61?lang=eng"
+        },
+        {
+          "title": "Isaiah 62, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/62?lang=eng"
+        },
+        {
+          "title": "Isaiah 63, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/63?lang=eng"
+        },
+        {
+          "title": "Isaiah 64, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/64?lang=eng"
+        },
+        {
+          "title": "Isaiah 65, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/65?lang=eng"
+        },
+        {
+          "title": "Isaiah 66, King James Version",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/66?lang=eng"
+        }
+      ],
+      "segments": [
+        {
+          "role": "commentary",
+          "start": 0.0,
+          "duration": 10.332166666666666,
+          "text": "This week's Come Follow Me lesson brings Isaiah's many images into one hopeful picture: Jesus Christ can redeem His people and lead them into a renewed future."
+        },
+        {
+          "role": "commentary",
+          "start": 11.032166666666667,
+          "duration": 28.780541666666668,
+          "text": "In Isaiah fifty-eight, sincere worship reaches outward. Fasting and Sabbath observance invite us to draw closer to God and care for people who need help. In chapters fifty-nine and sixty-one, the Savior is the One who steps in to rescue and bring comfort. Chapters sixty and sixty-two describe His light and the gathering of His people. The later chapters remember His lovingkindness and combine honest repentance with hope for a world renewed under His reign."
+        },
+        {
+          "role": "commentary",
+          "start": 40.512708333333336,
+          "duration": 18.34175,
+          "text": "Together, these passages invite us to remember what Christ has done, recognize His help now, and look forward to His return. Our response can begin in ordinary choices: tell the truth, relieve someone's burden, make room for God on the Sabbath, and help another person see the Savior's light."
+        },
+        {
+          "role": "commentary",
+          "start": 59.554458333333336,
+          "duration": 14.86875,
+          "text": "As you reflect on the whole week, choose one promise about Jesus Christ to remember and one way to live differently because of it. You do not need to understand every image in Isaiah to begin trusting the Redeemer and following Him more closely."
         }
       ]
     }

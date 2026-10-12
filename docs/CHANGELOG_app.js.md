@@ -1,5 +1,13 @@
 # app.js Changelog
 
+## 2026-10-11 — Weekly section navigation and revised-audio resume — [UNCONFIRMED]
+
+**What changed:** Navigation/autoplay now span introduction, chapters, and review. Displays nine scripture chapters, shows appropriate commentary-only status, requests versioned MP3 URLs, and restores time only for the same audio revision.
+
+**Why:** Make the new framing playable in order without using stale audio or positions after revisions.
+
+**Side effects / limitations:** Stable chapter IDs preserve chapter selection and listening preferences; modified tracks restart at their beginning when old timestamps no longer correspond. Owner listening/UI feedback remains pending.
+
 ## 2026-10-11 — Playback and synchronized transcripts — [UNCONFIRMED]
 
 **What changed:** Added JSON loading, nine-chapter selection, exact numbered

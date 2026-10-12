@@ -29,6 +29,7 @@
     lastSaved = now;
     saved = {
       chapterId: chapter().id,
+      audioVersion: chapter().audioVersion,
       time: audio.currentTime,
       speed: Number($("speed").value),
       autoplay: $("autoplay").checked,
@@ -92,7 +93,7 @@
     setStatus("Loading audio…");
     try {
       await audio.play();
-      if (request === playRequest) setStatus("Scripture and commentary · follow along below");
+      if (request === playRequest) setStatus(listeningStatus());
     } catch (error) {
       if (request !== playRequest || error.name === "AbortError") return;
       setStatus(error.name === "NotAllowedError" ? "Tap Play to begin listening." : "Audio could not play. Check your connection and tap Play again.");
@@ -157,7 +158,9 @@
     audio.pause();
     index = nextIndex;
     pendingTime = Math.max(0, Math.min(time, chapter().duration));
-    audio.src = new URL(chapter().audio, dataBase).href;
+    const source = new URL(chapter().audio, dataBase);
+    if (chapter().audioVersion) source.searchParams.set("v", chapter().audioVersion);
+    audio.src = source.href;
     audio.load();
     audio.playbackRate = Number($("speed").value);
     $("chapter-title").textContent = chapter().title;
@@ -218,13 +221,16 @@
   audio.addEventListener("timeupdate", () => { updatePosition(); remember(); });
   audio.addEventListener("play", playbackUI);
   audio.addEventListener("pause", () => { playbackUI(); remember(true); });
-  audio.addEventListener("playing", () => setStatus("Scripture and commentary · follow along below"));
+  function listeningStatus() {
+    return `${chapter().kind === "chapter" ? "Scripture and commentary" : "Commentary"} · follow along below`;
+  }
+  audio.addEventListener("playing", () => { if (library) setStatus(listeningStatus()); });
   audio.addEventListener("waiting", () => { if (!audio.paused) setStatus("Buffering audio…"); });
   audio.addEventListener("error", () => setStatus("Audio could not load. Check your connection and try Play again."));
   audio.addEventListener("ended", () => {
     remember(true);
     if ($("autoplay").checked && index < library.chapters.length - 1) selectChapter(index + 1, true);
-    else setStatus(index === library.chapters.length - 1 ? "You’ve reached the end of this week’s reading." : "Chapter complete. Choose Next when you’re ready.");
+    else setStatus(index === library.chapters.length - 1 ? "You’ve reached the end of this week’s study." : "Section complete. Choose Next when you’re ready.");
     playbackUI();
   });
   $("play").addEventListener("click", () => {
@@ -246,7 +252,7 @@
   async function initialize() {
     controls.forEach((id) => { $(id).disabled = true; });
     try {
-      const response = await fetch(new URL("library.json", dataBase));
+      const response = await fetch(new URL("library.json", dataBase), { cache: "no-cache" });
       if (!response.ok) throw new Error(`Library request: ${response.status}`);
       library = await response.json();
       if (!Array.isArray(library.chapters) || !library.chapters.length) throw new Error("Empty library");
@@ -254,7 +260,8 @@
       $("lesson-dates").textContent = library.dates;
       $("lesson-reading").textContent = library.reading;
       $("lesson-link").href = library.lessonUrl;
-      $("week-length").textContent = `${library.chapters.length} chapters · ${Math.round(library.chapters.reduce((sum, entry) => sum + entry.duration, 0) / 60)} min`;
+      const chapterCount = library.chapters.filter((entry) => !entry.kind || entry.kind === "chapter").length;
+      $("week-length").textContent = `${chapterCount} chapters · ${Math.round(library.chapters.reduce((sum, entry) => sum + entry.duration, 0) / 60)} min`;
       const rates = [...$("speed").options].map((option) => option.value);
       $("speed").value = rates.includes(String(saved.speed)) ? String(saved.speed) : "1";
       $("autoplay").checked = saved.autoplay === true;
@@ -275,7 +282,8 @@
       controls.forEach((id) => { $(id).disabled = false; });
       const restoreIndex = library.chapters.findIndex((entry) => entry.id === saved.chapterId);
       // Capture saved time before chapter selection writes new playback state.
-      const restoreTime = Number.isFinite(saved.time) ? saved.time : 0;
+      const restoreEntry = library.chapters[Math.max(0, restoreIndex)];
+      const restoreTime = saved.audioVersion === restoreEntry.audioVersion && Number.isFinite(saved.time) ? saved.time : 0;
       pendingTime = 0;
       selectChapter(Math.max(0, restoreIndex), false, restoreTime);
       mediaControls();
@@ -283,9 +291,9 @@
       $("enhanced-controls").hidden = false;
     } catch (_) {
       setStatus("The transcript could not load. Open this page through GitHub Pages or the local preview server, then refresh.");
-      $("chapter-focus").textContent = "You can still play Isaiah 58 using the audio controls.";
+      $("chapter-focus").textContent = "You can still play the lesson introduction using the audio controls.";
       $("transcript").textContent = "Transcript unavailable. Please refresh when connected.";
-      audio.src = new URL("audio/Isaiah_58_Explained.mp3", dataBase).href;
+      audio.src = new URL("audio/Week_Introduction.mp3", dataBase).href;
     }
   }
   initialize();

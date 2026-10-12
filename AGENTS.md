@@ -26,6 +26,11 @@ The current audio scope is every chapter in the linked lesson: Isaiah 58-66,
 one MP3 per chapter. End with the chapter summary/takeaways; do not tell the
 listener to pause the recording. For the future app, record a next-chapter arrow
 and optional chapter autoplay. Do not insert spoken app-control instructions.
+The owner now requests Lesson Introduction before Isaiah 58 and Week in Review
+after Isaiah 66 as two separate commentary tracks. Move week-level orientation
+out of Isaiah 58, give all chapters consistent openings, and describe generated
+explanations as helping clarity and understanding rather than "for beginners."
+Keep middle-initial periods in written transcripts; remove them only for speech.
 
 The owner has authorized web application implementation: a mobile-friendly HTML
 audio/transcript player for GitHub Pages. Show only Scripture or Commentary as
@@ -45,6 +50,7 @@ behavior and full-week audio remain unconfirmed until owner review.
 | `docs/audio_playback.md` | Owner-reviewed personal MP3 baseline, session structure, and speech/rendering constraints. |
 | `docs/web_player_plan.md` | Authorized player requirements, implementation proposal, and pending review limits. |
 | `docs/github_pages_setup.md` | Deployment candidate instructions and local preview commands; await owner review. |
+| `docs/weekly_sections_plan.md` | Weekly framing, canonical written punctuation, and pending audio/export revisions. |
 
 Component reference files will be added as systems are designed and confirmed.
 Add each to this table when it exists. Source code is the authority for what
@@ -114,3 +120,6 @@ evidence that such directories exist. Do not create them without a task need.
 in Git. Keep raw retrieved Church pages and voice/model settings in ignored local
 preparation files. Browser metadata controls are progressive enhancements; verify
 on the owner's iPhone before promising lock-screen or Bluetooth behavior.
+The public library keeps its existing `chapters` key for the ordered listening
+sequence, including commentary-only introduction/review entries distinguished by
+`kind`. Do not assume every entry has scripture verses or a chapter number.

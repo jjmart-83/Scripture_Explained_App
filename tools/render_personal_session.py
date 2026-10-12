@@ -21,17 +21,12 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 from kokoro_onnx import Kokoro
+try:
+    from .speech_text import normalize_spoken_names, transcript_markdown
+except ImportError:
+    from speech_text import normalize_spoken_names, transcript_markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-
-
-def normalize_spoken_names(text: str) -> str:
-    """Remove middle-initial stops in personal names before sentence chunking."""
-    return re.sub(
-        r"\b([A-Z][a-z]+)((?:\s+[A-Z]\.)+)(?=\s+[A-Z][a-z])",
-        lambda match: match[1] + match[2].replace(".", ""),
-        text,
-    )
 
 
 def sha256(path: Path) -> str:
@@ -66,6 +61,12 @@ def reader_definitions(path: Path) -> dict:
 
 
 def validate_session(session: dict) -> dict[int, str]:
+    if not session["segments"]:
+        raise ValueError("A study section must contain at least one spoken segment")
+    if session.get("kind") in ("introduction", "summary") and (
+        session["expected_verse_count"] != 0 or any(s["role"] != "commentary" for s in session["segments"])
+    ):
+        raise ValueError("Lesson framing sections must contain commentary only")
     verses = session["verses"]
     expected = list(range(1, session["expected_verse_count"] + 1))
     if [verse["number"] for verse in verses] != expected:
@@ -100,13 +101,19 @@ def create_engine(reader_path: Path, model_dir: Path):
 
 
 def session_filename(session: dict) -> str:
+    if session.get("kind") in ("introduction", "summary"):
+        name = session["audio_filename"]
+        if not re.fullmatch(r"[A-Za-z0-9_-]+\.mp3", name):
+            raise ValueError("Lesson audio filename must be a simple MP3 basename")
+        return name
     book = re.sub(r"[^A-Za-z0-9]+", "_", session.get("book", "Isaiah")).strip("_")
     if not book or int(session["chapter"]) < 1:
         raise ValueError("A book name and positive chapter number are required")
     return f"{book}_{int(session['chapter'])}_Explained.mp3"
 
 
-def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=None) -> Path:
+def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=None,
+           reuse_from: Path | None = None) -> Path:
     model = model_dir / "kokoro-v1.0.onnx"
     voices = model_dir / "voices-v1.0.bin"
     for path in (session_path, reader_path, model, voices):
@@ -114,6 +121,17 @@ def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=Non
             raise FileNotFoundError(f"Required local asset missing: {path}")
     session = json.loads(session_path.read_text(encoding="utf-8"))
     verse_map = validate_session(session)
+    asset_hashes = {"reader_sha256": sha256(reader_path), "model_sha256": sha256(model),
+                    "voices_sha256": sha256(voices)}
+    previous_session = previous_metadata = None
+    if reuse_from is not None:
+        previous_path = reuse_from / "session.json"
+        previous_session = json.loads(previous_path.read_text(encoding="utf-8"))
+        previous_metadata = json.loads((reuse_from / "render_metadata.json").read_text(encoding="utf-8"))
+        if previous_metadata["session_sha256"] != sha256(previous_path):
+            raise ValueError("Reuse source session does not match its rendering metadata")
+        if any(previous_metadata[key] != value for key, value in asset_hashes.items()):
+            raise ValueError("Reuse source was rendered with different reader/model assets")
     helpers = reader_definitions(reader_path)
     # Load existing local assets directly; do not invoke the reader's downloader.
     engine = engine if engine is not None else create_engine(reader_path, model_dir)
@@ -140,22 +158,42 @@ def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=Non
                 first_scripture = False
         else:
             text = normalize_spoken_names(text)
-        chunks = []
-        pieces = helpers["segment_text"](text)
-        for part_index, piece in enumerate(pieces, 1):
-            print(f"Chapter {session['chapter']} segment {index}/{len(session['segments'])} {role}: "
-                  f"chunk {part_index}/{len(pieces)}", flush=True)
-            chunk, rate = engine.synthesize(
-                piece, params["voice"], params["speed"], params["lang"], params["pitch"]
-            )
+        reused = False
+        audio = None
+        if previous_metadata and index <= len(previous_metadata["timings"]):
+            prior = previous_metadata["timings"][index - 1]
+            if (prior["role"] == role and prior["spoken_text"] == text
+                    and previous_session["voices"][role] == params):
+                wav = reuse_from / "segments" / f"{index:02d}_{role}.wav"
+                audio, rate = sf.read(wav, dtype="float32")
+                if (audio.ndim != 1 or rate != previous_metadata["sample_rate"]
+                        or abs(len(audio) - round(prior["duration_seconds"] * rate)) > 1
+                        or not len(audio) or not np.isfinite(audio).all()):
+                    raise ValueError(f"Invalid reusable audio segment: {wav}")
+                reused = True
+                print(f"{session['title']} segment {index}: reused unchanged {role}", flush=True)
+        if audio is None:
+            chunks = []
+            pieces = helpers["segment_text"](text)
+            for part_index, piece in enumerate(pieces, 1):
+                print(f"{session['title']} segment {index}/{len(session['segments'])} {role}: "
+                      f"chunk {part_index}/{len(pieces)}", flush=True)
+                chunk, rate = engine.synthesize(
+                    piece, params["voice"], params["speed"], params["lang"], params["pitch"]
+                )
+                if sample_rate is None:
+                    sample_rate = rate
+                if rate != sample_rate or not len(chunk) or not np.isfinite(chunk).all():
+                    raise ValueError("Synthesis returned invalid audio or changed sample rate")
+                if part_index > 1:
+                    chunks.append(np.zeros(round(rate * 0.15), dtype=np.float32))
+                chunks.append(chunk)
+            audio = np.concatenate(chunks)
+        else:
             if sample_rate is None:
                 sample_rate = rate
-            if rate != sample_rate or not len(chunk) or not np.isfinite(chunk).all():
-                raise ValueError("Synthesis returned invalid audio or changed sample rate")
-            if part_index > 1:
-                chunks.append(np.zeros(round(rate * 0.15), dtype=np.float32))
-            chunks.append(chunk)
-        audio = np.concatenate(chunks)
+            if rate != sample_rate:
+                raise ValueError("Reusable segment sample rate differs from new synthesis")
         sf.write(segment_dir / f"{index:02d}_{role}.wav", audio, sample_rate)
         timings.append({
             "segment": index, "role": role, "voice": params["voice"],
@@ -164,6 +202,7 @@ def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=Non
             "verse_numbers": segment.get("verse_numbers", []),
             "source_ids": segment.get("source_ids", ["scripture"]),
             "spoken_text": text,
+            "reused_audio": reused,
         })
         all_audio.append(audio)
         cursor += len(audio)
@@ -187,16 +226,19 @@ def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=Non
         "duration_seconds": len(decoded) / decoded_rate,
         "peak": float(np.max(np.abs(decoded))), "bytes": output.stat().st_size,
         "verse_coverage": list(verse_map), "timings": timings,
-        "session_sha256": sha256(session_path), "reader_sha256": sha256(reader_path),
-        "model_sha256": sha256(model), "voices_sha256": sha256(voices),
+        "session_sha256": sha256(session_path), **asset_hashes,
         "dependencies": {name: importlib.metadata.version(name) for name in
                          ("kokoro-onnx", "onnxruntime", "numpy", "scipy", "soundfile")},
         "owner_listening_confirmation": "pending",
         "speech_normalization": "Middle-initial periods removed in commentary names before chunking",
     }
+    if previous_metadata:
+        metadata["reuse_source_session_sha256"] = previous_metadata["session_sha256"]
     (output_dir / "render_metadata.json").write_text(
         json.dumps(metadata, indent=2), encoding="utf-8"
     )
+    transcript_name = output.stem.removesuffix("_Explained") + "_Transcript.md"
+    (output_dir / transcript_name).write_text(transcript_markdown(session), encoding="utf-8")
     print(f"Saved {output}\nDuration: {metadata['duration_seconds'] / 60:.2f} minutes", flush=True)
     return output
 
@@ -208,7 +250,11 @@ if __name__ == "__main__":
     parser.add_argument("--reader", type=Path,
                         default=ROOT.parent / "tts_reader" / "tts_reader.py")
     parser.add_argument("--models", type=Path, default=ROOT / ".tools" / "tts_models")
+    parser.add_argument("--reuse-from-dir", type=Path,
+                        help="Prior rendered folders by matching session folder name; reuse verified unchanged WAVs")
     args = parser.parse_args()
     shared_engine = create_engine(args.reader, args.models)
     for session_path in args.session:
-        render(session_path, args.reader, args.models, engine=shared_engine)
+        prior = args.reuse_from_dir / session_path.parent.name if args.reuse_from_dir else None
+        render(session_path, args.reader, args.models, engine=shared_engine,
+               reuse_from=prior if prior and prior.is_dir() else None)
