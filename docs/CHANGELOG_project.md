@@ -20,6 +20,12 @@ for a fresh visit, Isaiah 61 after revisiting, retained 1.25× speed and a saved
 503 for MP3s: viewing Isaiah 64 and reloading still restored Isaiah 64 with no
 audio metadata. JavaScript syntax passed. Audio/content assets were not changed.
 
+**Publication:** Revision `47e844a` deployed successfully in
+[Pages run 38211625985](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38211625985).
+The live HTML uses the updated script version, and the live JavaScript matches
+the local file exactly. A live browser reload restored Isaiah 58 and its saved
+playback position with audio paused. Saved a published-player screenshot locally.
+
 ## 2026-10-11 — Two-verse announcements use “and” — [UNCONFIRMED]
 
 **What changed:** Exactly two verses use Verses X and Y, retaining Verse X for
