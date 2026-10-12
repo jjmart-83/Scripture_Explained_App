@@ -1,0 +1,16 @@
+# index.html Changelog
+
+## 2026-10-11 — Mobile audio/transcript page — [UNCONFIRMED]
+
+**What changed:** Created the lesson header, chapter navigation, persistent audio
+element, playback controls, transcript/source areas, accessible labels, and
+no-JavaScript MP3 links. Transcript roles are Scripture and Commentary only.
+Explicitly names the speed control through its visible label for accessibility.
+
+**Why:** Let the owner listen through GitHub Pages on an iPhone without moving MP3s.
+
+**Dead ends / limitations:** Direct file opening can block the JSON fetch; the
+fallback retains native Isaiah 58 audio controls. Use HTTP preview or Pages.
+
+**Side effects:** References only relative local assets and the official lesson.
+Chrome desktop/mobile-size QA passed; actual iPhone behavior is pending review.

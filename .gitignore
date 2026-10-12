@@ -1,0 +1,40 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies, builds, and local tooling (not yet present)
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.tools/
+.research/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# Locally acquired content, databases, and generated audio
+.local/
+content-cache/
+audio-cache/
+output/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Editor/OS temporary files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# Capacitor platform directories are intentionally not ignored here.
+# Decide how to version their native configuration when platforms are added.
