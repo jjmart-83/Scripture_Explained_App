@@ -39,6 +39,15 @@ the longer introduction title. Standalone Python exported all eleven sections
 without numerical/TTS dependencies. Revised HTML versions its script/style URLs,
 and the player revalidates the library to avoid stale content after publication.
 
+**Publication:** Pushed revision `4244999` and verified successful
+[Pages deployment 38204855384](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38204855384).
+The published library matches the revised local export exactly; all eleven full
+MP3 SHA-256 hashes match their local files. Reloading the live browser displayed
+eleven sections, and the introduction played without errors using its versioned
+audio URL. Browser tab handles expired during QA; a fresh tab and batched live
+check completed successfully. Paused playback, saved the published preview, and
+kept the live player open. Refreshed the eleven-track website ZIP as well.
+
 ## 2026-10-11 — Create repository and publish Pages — [UNCONFIRMED]
 
 **What changed:** The owner explicitly authorized uploading the entire project
