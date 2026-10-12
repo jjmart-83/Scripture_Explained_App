@@ -25,6 +25,11 @@ public track entries are unchanged. Updated the local transcript, weekly manifes
 index, and website ZIP. The ignored validation helper initially needed the project
 root added to its Python import path; subsequent checks passed.
 
+**Publication:** Revision `550bafe` deployed successfully in
+[Pages run 38205703097](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38205703097).
+The live library matches the local export, includes the revised closing sentence,
+and the full published Isaiah 58 MP3 hash matches the validated local audio.
+
 ## 2026-10-11 — Weekly opening, review, and written initials — [UNCONFIRMED]
 
 **What changed:** Added Lesson Introduction before Isaiah 58 and Week in Review
