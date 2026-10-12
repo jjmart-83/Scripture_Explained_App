@@ -20,6 +20,23 @@ honor existing ignore rules for secrets, models, dependencies, caches, and local
 generated working files. Initial repository scan found no credential patterns
 in uploadable files. The website and repository will be public.
 
+**Outcome (2026-10-11):** Created the public repository
+[`jjmart-83/Scripture_Explained_App`](https://github.com/jjmart-83/Scripture_Explained_App)
+and pushed the complete 38-file initial project commit `b2c9e88` to `main`.
+Enabled workflow-based Pages with HTTPS and set the repository homepage to
+[`https://jjmart-83.github.io/Scripture_Explained_App/`](https://jjmart-83.github.io/Scripture_Explained_App/).
+[Deployment run 38202876793](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38202876793)
+succeeded. Live HTML returned 200, the library matched local data exactly, and
+all nine MP3 endpoints returned valid 206 byte ranges matching the local files.
+Chrome playback on the published page reached ready state 4 and advanced time
+without an audio error; paused playback and left the published player open.
+Owner listening and actual iPhone lock-screen/Bluetooth review remain pending.
+
+**Verification tooling:** Windows PowerShell's web-request helper rejected a
+Range header before sending the request; standard Python urllib verified every
+published audio range successfully. Actions emitted nonblocking runner/runtime
+deprecation notices but completed the Pages deployment successfully.
+
 ## 2026-10-11 — Build GitHub Pages listening tool — [UNCONFIRMED]
 
 **What changed:** Moved into owner-authorized web implementation with a static
