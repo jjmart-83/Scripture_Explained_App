@@ -1,5 +1,13 @@
 # index.html Changelog
 
+## 2026-10-11 — Refresh launch behavior script — [UNCONFIRMED]
+
+**What changed:** Versioned the player script URL for the launch-state revision.
+
+**Why:** Returning listeners should receive the updated restoration behavior.
+
+**Dead ends / side effects:** No failed approach; the layout and audio are unchanged.
+
 ## 2026-10-11 — Weekly study labels and description — [UNCONFIRMED]
 
 **What changed:** Changed chapter-specific controls to Previous/Next section, added direct introduction/review links, and used clarity/understanding wording in descriptive text.

@@ -36,6 +36,10 @@ block ("Verse X" for one verse, "Verses X and Y" for two, and "Verses X to Y"
 for three or more). Include book/chapter only in the first
 scripture block. Do not speak individual verse numbers throughout the passage;
 retain the canonical numbered verses in the written transcript.
+On launch, restore the most recently viewed section; a fresh visit starts at
+Lesson Introduction. Preserve listening preferences and do not play automatically.
+For the future week selector, selecting another week must start that week's
+Lesson Introduction, rather than restoring its old viewed section.
 
 The owner has authorized web application implementation: a mobile-friendly HTML
 audio/transcript player for GitHub Pages. Show only Scripture or Commentary as

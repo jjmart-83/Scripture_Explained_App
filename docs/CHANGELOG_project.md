@@ -1,5 +1,25 @@
 # Project Setup Changelog
 
+## 2026-10-11 — Launch to last view or fresh introduction — [UNCONFIRMED]
+
+**What changed:** Implement the clarified rule: reopen the last viewed section,
+or select Lesson Introduction on a fresh visit. Save section changes before audio
+finishes loading; retain playback preferences and pause on launch. Record the
+future requirement that explicitly selecting a different week starts its introduction.
+
+**Why:** Match the owner's correction to the earlier always-introduction request.
+
+**Dead ends / side effects:** The earlier request was interrupted before edits.
+Existing launch logic already restored loaded audio; this closes the gap when a
+section is viewed without loaded metadata and makes the fresh default explicit.
+No week-selection UI is added. Earlier confirmation markers remain pending.
+
+**Validation:** Browser checks on fresh test origins confirmed Lesson Introduction
+for a fresh visit, Isaiah 61 after revisiting, retained 1.25× speed and a saved
+15-second position, and paused launch. A separate preview deliberately returned
+503 for MP3s: viewing Isaiah 64 and reloading still restored Isaiah 64 with no
+audio metadata. JavaScript syntax passed. Audio/content assets were not changed.
+
 ## 2026-10-11 — Two-verse announcements use “and” — [UNCONFIRMED]
 
 **What changed:** Exactly two verses use Verses X and Y, retaining Verse X for

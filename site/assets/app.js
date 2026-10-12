@@ -23,14 +23,14 @@
   const setStatus = (message) => { $("player-status").textContent = message; };
 
   function remember(force = false) {
-    if (!library || pendingTime !== null) return;
+    if (!library) return;
     const now = Date.now();
     if (!force && now - lastSaved < 1000) return;
     lastSaved = now;
     saved = {
       chapterId: chapter().id,
       audioVersion: chapter().audioVersion,
-      time: audio.currentTime,
+      time: pendingTime ?? audio.currentTime,
       speed: Number($("speed").value),
       autoplay: $("autoplay").checked,
       follow: $("follow").checked,
@@ -158,6 +158,8 @@
     audio.pause();
     index = nextIndex;
     pendingTime = Math.max(0, Math.min(time, chapter().duration));
+    // Save the viewed section immediately, even if its audio has not loaded yet.
+    remember(true);
     const source = new URL(chapter().audio, dataBase);
     if (chapter().audioVersion) source.searchParams.set("v", chapter().audioVersion);
     audio.src = source.href;
@@ -281,11 +283,13 @@
       });
       controls.forEach((id) => { $(id).disabled = false; });
       const restoreIndex = library.chapters.findIndex((entry) => entry.id === saved.chapterId);
+      const introductionIndex = Math.max(0, library.chapters.findIndex((entry) => entry.kind === "introduction"));
+      const startIndex = restoreIndex >= 0 ? restoreIndex : introductionIndex;
       // Capture saved time before chapter selection writes new playback state.
-      const restoreEntry = library.chapters[Math.max(0, restoreIndex)];
-      const restoreTime = saved.audioVersion === restoreEntry.audioVersion && Number.isFinite(saved.time) ? saved.time : 0;
+      const restoreEntry = library.chapters[startIndex];
+      const restoreTime = restoreIndex >= 0 && saved.audioVersion === restoreEntry.audioVersion && Number.isFinite(saved.time) ? saved.time : 0;
       pendingTime = 0;
-      selectChapter(Math.max(0, restoreIndex), false, restoreTime);
+      selectChapter(startIndex, false, restoreTime);
       mediaControls();
       audio.controls = false;
       $("enhanced-controls").hidden = false;
