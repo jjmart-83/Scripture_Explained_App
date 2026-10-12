@@ -23,6 +23,11 @@ The affected MP3s decode as valid non-silent 24 kHz audio with valid timestamps.
 The other seven public track entries and all written text are unchanged. Refreshed
 the manifest/index and website ZIP; archive integrity passed.
 
+**Publication:** Revision `caf40d2` deployed successfully in
+[Pages run 38210234615](https://github.com/jjmart-83/Scripture_Explained_App/actions/runs/38210234615).
+The live library matches the validated export, and all four affected full MP3
+hashes match their local files. Updated announcements are available in the player.
+
 ## 2026-10-11 — Passage-level spoken verse announcements — [UNCONFIRMED]
 
 **What changed:** Announce the book/chapter at the first scripture block, then
