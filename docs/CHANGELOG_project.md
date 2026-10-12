@@ -1,5 +1,28 @@
 # Project Setup Changelog
 
+## 2026-10-11 — Two-verse announcements use “and” — [UNCONFIRMED]
+
+**What changed:** Exactly two verses use Verses X and Y, retaining Verse X for
+single verses and Verses X to Y for longer passages. Seven two-verse blocks occur
+in Isaiah 58, 59, 61, and 64; prepare revised audio for those four chapters.
+
+**Why:** Implement the owner's requested distinction between a pair and a range.
+
+**Dead ends / limitations:** No failed approach. Previous implementation and
+listening entries remain pending owner review; the instruction authorizes this
+targeted update and publication.
+
+**Side effects:** Reuse all unchanged segments and preserve prior renderings
+locally. Update affected MP3s, timing data, and audio versions. Written scripture,
+commentary, and the other seven listening tracks are unchanged.
+
+**Validation:** Six first/later speech-format checks passed for one, two, and
+three verses. All seven two-verse blocks now match the “and” announcement; all
+37 unaffected WAVs in the four revised chapters match their prior files exactly.
+The affected MP3s decode as valid non-silent 24 kHz audio with valid timestamps.
+The other seven public track entries and all written text are unchanged. Refreshed
+the manifest/index and website ZIP; archive integrity passed.
+
 ## 2026-10-11 — Passage-level spoken verse announcements — [UNCONFIRMED]
 
 **What changed:** Announce the book/chapter at the first scripture block, then

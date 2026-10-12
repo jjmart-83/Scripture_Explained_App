@@ -1,5 +1,15 @@
 # speech_text.py Changelog
 
+## 2026-10-11 — Say “and” for exactly two verses — [UNCONFIRMED]
+
+**What changed:** Exactly two verses are announced as Verses X and Y. Single
+verses retain Verse X, and groups of three or more retain Verses X to Y.
+
+**Why:** Apply the owner's refinement to the passage-announcement wording.
+
+**Dead ends / side effects:** No failed approach. Canonical text, first-block
+book/chapter identification, and written transcript formatting are unchanged.
+
 ## 2026-10-11 — One announcement per scripture passage — [UNCONFIRMED]
 
 **What changed:** Added scripture speech construction with a single Verse X or

@@ -32,7 +32,8 @@ out of Isaiah 58, give all chapters consistent openings, and describe generated
 explanations as helping clarity and understanding rather than "for beginners."
 Keep middle-initial periods in written transcripts; remove them only for speech.
 Announce one verse or consecutive verse range at the start of each scripture
-block ("Verse X" or "Verses X to Y"). Include book/chapter only in the first
+block ("Verse X" for one verse, "Verses X and Y" for two, and "Verses X to Y"
+for three or more). Include book/chapter only in the first
 scripture block. Do not speak individual verse numbers throughout the passage;
 retain the canonical numbered verses in the written transcript.
 

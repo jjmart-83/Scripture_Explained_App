@@ -17,7 +17,12 @@ def scripture_spoken_text(session: dict, numbers: list[int], verses: dict[int, s
     if (not numbers or any(type(number) is not int or number < 1 for number in numbers)
             or numbers != list(range(numbers[0], numbers[-1] + 1))):
         raise ValueError("A scripture block must contain a nonempty consecutive verse range")
-    announcement = f"Verse {numbers[0]}" if len(numbers) == 1 else f"Verses {numbers[0]} to {numbers[-1]}"
+    if len(numbers) == 1:
+        announcement = f"Verse {numbers[0]}"
+    elif len(numbers) == 2:
+        announcement = f"Verses {numbers[0]} and {numbers[1]}"
+    else:
+        announcement = f"Verses {numbers[0]} to {numbers[-1]}"
     text = announcement + ".\n\n" + "\n\n".join(verses[number] for number in numbers)
     if first_block:
         text = f"{session.get('book', 'Isaiah')}, chapter {session['chapter']}.\n\n" + text
