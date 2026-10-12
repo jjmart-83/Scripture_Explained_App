@@ -1,5 +1,30 @@
 # Project Setup Changelog
 
+## 2026-10-11 — Consistent Isaiah 58 application wording — [UNCONFIRMED]
+
+**What changed:** Replaced Isaiah 58's closing "For this week, choose one small
+action" invitation with "A small application is to help someone with a burden
+or plan something that helps you find joy in the Sabbath." Updated the prepared
+session, canonical transcript, closing commentary audio, and website export.
+
+**Why:** Match the application wording used at the end of the other chapters,
+as explicitly requested by the owner after comparing their recaps.
+
+**Dead ends / limitations:** Earlier setup/player/audio entries remain pending
+owner review; this instruction authorizes the targeted revision and publication.
+No new failed approach. Listening quality of the revised sentence awaits review.
+
+**Side effects:** Retain the previous Isaiah 58 rendering locally and reuse its
+eleven unchanged WAVs. Only the final commentary segment is synthesized again.
+The existing audio-version mechanism refreshes the public MP3 and saved position.
+
+**Validation:** All fourteen verse records and the eleven unchanged WAV segments
+match the preceding Isaiah 58 revision. Only its closing commentary was rendered;
+the MP3 decodes as valid non-silent 24 kHz audio (426.07 seconds). The other ten
+public track entries are unchanged. Updated the local transcript, weekly manifest,
+index, and website ZIP. The ignored validation helper initially needed the project
+root added to its Python import path; subsequent checks passed.
+
 ## 2026-10-11 — Weekly opening, review, and written initials — [UNCONFIRMED]
 
 **What changed:** Added Lesson Introduction before Isaiah 58 and Week in Review
