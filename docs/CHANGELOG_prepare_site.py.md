@@ -1,5 +1,16 @@
 # prepare_site.py Changelog
 
+## 2026-10-11 — Verify rendered scripture announcements — [UNCONFIRMED]
+
+**What changed:** Export now checks actual spoken scripture text against canonical
+verses and the new first/later range announcement before copying audio/data.
+
+**Why:** Prevent publishing old per-verse announcements or transcript/audio
+disagreement after the speech-format revision.
+
+**Dead ends / side effects:** No failed approach. Written verse numbers and
+commentary punctuation remain unchanged. Export remains standard-library only.
+
 ## 2026-10-11 — Weekly listening sequence and written punctuation — [UNCONFIRMED]
 
 **What changed:** Exported introduction and review around the nine chapters with kind, stable IDs, nullable chapter numbers, and MP3 version hashes. Written commentary comes from canonical session text, validated against normalized rendered speech.

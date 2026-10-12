@@ -31,6 +31,10 @@ after Isaiah 66 as two separate commentary tracks. Move week-level orientation
 out of Isaiah 58, give all chapters consistent openings, and describe generated
 explanations as helping clarity and understanding rather than "for beginners."
 Keep middle-initial periods in written transcripts; remove them only for speech.
+Announce one verse or consecutive verse range at the start of each scripture
+block ("Verse X" or "Verses X to Y"). Include book/chapter only in the first
+scripture block. Do not speak individual verse numbers throughout the passage;
+retain the canonical numbered verses in the written transcript.
 
 The owner has authorized web application implementation: a mobile-friendly HTML
 audio/transcript player for GitHub Pages. Show only Scripture or Commentary as

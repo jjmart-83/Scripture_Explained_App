@@ -11,6 +11,19 @@ def normalize_spoken_names(text: str) -> str:
     )
 
 
+def scripture_spoken_text(session: dict, numbers: list[int], verses: dict[int, str],
+                          *, first_block: bool = False) -> str:
+    """Announce one verse/range, then read canonical text without verse labels."""
+    if (not numbers or any(type(number) is not int or number < 1 for number in numbers)
+            or numbers != list(range(numbers[0], numbers[-1] + 1))):
+        raise ValueError("A scripture block must contain a nonempty consecutive verse range")
+    announcement = f"Verse {numbers[0]}" if len(numbers) == 1 else f"Verses {numbers[0]} to {numbers[-1]}"
+    text = announcement + ".\n\n" + "\n\n".join(verses[number] for number in numbers)
+    if first_block:
+        text = f"{session.get('book', 'Isaiah')}, chapter {session['chapter']}.\n\n" + text
+    return text
+
+
 def transcript_markdown(session: dict) -> str:
     """Keep original written punctuation and label sections by role only."""
     lines = [f"# {session['title']}", "", f"Come, Follow Me: {session['lesson_dates']}", "",

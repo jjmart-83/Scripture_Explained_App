@@ -1,5 +1,18 @@
 # CHANGELOG - tools/render_personal_session.py
 
+## 2026-10-11 — Spoken scripture ranges — [UNCONFIRMED]
+
+**What changed:** The renderer uses shared range-announcement construction and
+validates each scripture block before rendering. Replaced per-verse narration
+labels with one passage announcement; kept the first book/chapter identification.
+
+**Why:** Implement the owner's requested listening flow in every chapter.
+
+**Dead ends / side effects:** No failed approach. All nine chapter scripture
+segments require new synthesis; unchanged commentary WAVs are verified and reused.
+Prepared scripts retain exact numbered verse records and canonical transcripts.
+Prior chapter renderings are preserved in the ignored before_verse_ranges folder.
+
 ## 2026-10-11 — Commentary-only lesson tracks and verified segment reuse — [UNCONFIRMED]
 
 **What changed:** Added safe introduction/review filenames, commentary-only validation, and an optional prior-render directory. Reuse requires matching original session, reader/model hashes, spoken text, full voice settings, WAV duration/rate, and valid mono samples. Added canonical Markdown transcript output using role-only headings.

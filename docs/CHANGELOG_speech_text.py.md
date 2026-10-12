@@ -1,5 +1,19 @@
 # speech_text.py Changelog
 
+## 2026-10-11 — One announcement per scripture passage — [UNCONFIRMED]
+
+**What changed:** Added scripture speech construction with a single Verse X or
+Verses X to Y announcement, followed by exact unnumbered verse text. Book/chapter
+is included only for the first scripture block. Reject empty, nonconsecutive,
+out-of-order, duplicate, noninteger, and nonpositive verse ranges.
+
+**Why:** Remove distracting individual spoken verse labels while orienting the
+listener to each passage before the next commentary block.
+
+**Dead ends / side effects:** No failed approach. Written transcript formatting
+is unchanged. Five contract checks cover first/later and single/multiple verse
+blocks plus invalid ranges. Listening quality awaits owner feedback.
+
 ## 2026-10-11 — Canonical transcript and speech-only name adjustment — [UNCONFIRMED]
 
 **What changed:** Extracted the existing name-normalization rule into a lightweight shared helper and added Markdown transcript formatting from canonical text.

@@ -22,9 +22,9 @@ import numpy as np
 import soundfile as sf
 from kokoro_onnx import Kokoro
 try:
-    from .speech_text import normalize_spoken_names, transcript_markdown
+    from .speech_text import normalize_spoken_names, scripture_spoken_text, transcript_markdown
 except ImportError:
-    from speech_text import normalize_spoken_names, transcript_markdown
+    from speech_text import normalize_spoken_names, scripture_spoken_text, transcript_markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -80,6 +80,7 @@ def validate_session(session: dict) -> dict[int, str]:
         if segment["role"] not in session["voices"]:
             raise ValueError("Unknown voice role")
         if segment["role"] == "scripture":
+            scripture_spoken_text(session, segment["verse_numbers"], verse_map)
             used.extend(segment["verse_numbers"])
         elif not segment["text"].strip() or not set(segment["source_ids"]) <= sources:
             raise ValueError("Commentary is empty or refers to an unrecorded source")
@@ -149,13 +150,9 @@ def render(session_path: Path, reader_path: Path, model_dir: Path, *, engine=Non
         params = session["voices"][role]
         text = segment.get("text", "")
         if role == "scripture":
-            text = "\n\n".join(
-                f"Verse {number}. {verse_map[number]}"
-                for number in segment["verse_numbers"]
-            )
-            if first_scripture:
-                text = f"{session.get('book', 'Isaiah')}, chapter {session['chapter']}.\n\n{text}"
-                first_scripture = False
+            text = scripture_spoken_text(session, segment["verse_numbers"], verse_map,
+                                         first_block=first_scripture)
+            first_scripture = False
         else:
             text = normalize_spoken_names(text)
         reused = False

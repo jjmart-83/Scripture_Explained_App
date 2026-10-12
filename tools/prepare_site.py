@@ -6,9 +6,9 @@ import shutil
 from pathlib import Path
 
 try:
-    from .speech_text import normalize_spoken_names
+    from .speech_text import normalize_spoken_names, scripture_spoken_text
 except ImportError:
-    from speech_text import normalize_spoken_names
+    from speech_text import normalize_spoken_names, scripture_spoken_text
 
 
 def prepare(chapters_dir: Path, site_dir: Path) -> dict:
@@ -29,6 +29,7 @@ def prepare(chapters_dir: Path, site_dir: Path) -> dict:
         verses = {v["number"]: v["text"] for v in session["verses"]}
         segments = []
         coverage = []
+        first_scripture = True
         for segment, timing in zip(session["segments"], metadata["timings"]):
             role = segment["role"]
             if role not in ("scripture", "commentary") or role != timing["role"]:
@@ -42,6 +43,9 @@ def prepare(chapters_dir: Path, site_dir: Path) -> dict:
                 numbers = segment["verse_numbers"]
                 if numbers != timing["verse_numbers"]:
                     raise ValueError(f"Verse timing mismatch: {folder}")
+                if scripture_spoken_text(session, numbers, verses, first_block=first_scripture) != timing["spoken_text"]:
+                    raise ValueError(f"Scripture text or range announcement differs from rendered speech: {folder}")
+                first_scripture = False
                 coverage.extend(numbers)
                 entry["verses"] = [{"number": n, "text": verses[n]} for n in numbers]
             else:

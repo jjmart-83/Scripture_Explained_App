@@ -1,5 +1,41 @@
 # Project Setup Changelog
 
+## 2026-10-11 — Passage-level spoken verse announcements — [UNCONFIRMED]
+
+**What changed:** Announce the book/chapter at the first scripture block, then
+Verse X for a single verse or Verses X to Y for a group. Later scripture blocks
+start with the verse/range announcement only. Removed individual spoken verse
+labels within each passage; preserve numbered verse records on the page.
+
+**Why:** Orient the listener before each commentary break without interrupting
+the scripture repeatedly with verse numbers, as the owner requested.
+
+**Dead ends / limitations:** Earlier setup/player/audio revisions remain pending
+owner review; the current instruction authorizes this revision and publication.
+No failed approach. Rendered pronunciations and pacing await listening feedback.
+
+**Side effects:** Re-render scripture blocks in all nine chapters using existing
+male narration; verify and reuse commentary audio. Preserve prior session/audio
+files locally. New audio versions update public URLs and prevent restoring old
+positions into revised timelines. Introduction/review and written wording remain
+unchanged. Confirmed references/README retain their reviewed baseline.
+
+**Initial checks:** Five speech-format contract checks passed for first/later,
+single/multiple verse blocks and invalid ranges. Changed Python files compile.
+Export now independently checks the spoken scripture against the canonical text
+and announcement rules before publication.
+
+**Validation:** All nine revised MP3s decode as valid non-silent 24 kHz audio.
+Each of the forty scripture blocks has exactly one range announcement and the
+full canonical text in order; all 160 verse records are unchanged. All 58 chapter
+commentary WAVs match the prior files byte for byte. Both weekly framing tracks
+and all written text are unchanged. Checked new timestamps against encoded audio,
+and refreshed the local manifest/index/transcripts and website ZIP. Total listening
+time is now 59.58 minutes. The exporter rejected old per-verse audio metadata,
+confirming its new guard prevents stale narration from being published. Single
+verse announcements are covered by contract checks; this week's groups all have
+multiple verses.
+
 ## 2026-10-11 — Consistent Isaiah 58 application wording — [UNCONFIRMED]
 
 **What changed:** Replaced Isaiah 58's closing "For this week, choose one small
